@@ -31,6 +31,15 @@ export class CvComponent {
       'Ingénieur',
       'rotating_card_profile.png'
     ),
+    new Cv(
+      3,
+      'Sellaouti',
+      'Aymen',
+      42,
+      '123456',
+      'Enseignant',
+      'rotating_card_profile3.png'
+    ),
   ];
   constructor() {}
   onForwardCv(cv: Cv) {
