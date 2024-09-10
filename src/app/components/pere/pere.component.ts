@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class PereComponent {
 reactToSonMessage(message: string) {
+  console.log('Received message');
+
   alert(message);
 }
 
