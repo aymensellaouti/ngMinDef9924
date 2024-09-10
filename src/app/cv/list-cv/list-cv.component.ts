@@ -7,5 +7,6 @@ import { Cv } from '../model/cv.model';
   styleUrls: ['./list-cv.component.css']
 })
 export class ListCvComponent {
-
+  @Input({alias: 'cvsList'})
+  cvs: Cv[] = [];
 }
