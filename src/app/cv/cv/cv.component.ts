@@ -7,6 +7,8 @@ import { Cv } from '../model/cv.model';
   styleUrls: ['./cv.component.css'],
 })
 export class CvComponent {
+
+  selectedCv: Cv | null = null;
   /**
    * la liste des cvs à gérer
    */
@@ -28,7 +30,10 @@ export class CvComponent {
       '12345',
       'Ingénieur',
       'rotating_card_profile.png'
-    )
+    ),
   ];
   constructor() {}
+  onForwardCv(cv: Cv) {
+    this.selectedCv = cv;
+  }
 }

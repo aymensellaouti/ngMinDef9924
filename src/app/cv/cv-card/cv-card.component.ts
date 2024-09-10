@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Cv } from '../model/cv.model';
 
 
@@ -8,5 +8,6 @@ import { Cv } from '../model/cv.model';
   styleUrls: ['./cv-card.component.css']
 })
 export class CvCardComponent {
+  @Input()
   cv: Cv | null = null;
 }

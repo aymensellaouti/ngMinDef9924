@@ -1,9 +1,9 @@
 <ol class="list-group">
   <li class="list-group-item">
     <!-- appItem(cvs[0]) -->
-    <app-item-cv [cv]="cvs[0]"/>
+    <app-item-cv [cv]="cvs[0]" (selectCv)="forwardSelectedCv($event)"/>
   </li>
   <li class="list-group-item">
-    <app-item-cv [cv]="cvs[1]"/>
+    <app-item-cv [cv]="cvs[1]" (selectCv)="forwardSelectedCv($event)"/>
   </li>
 </ol>
