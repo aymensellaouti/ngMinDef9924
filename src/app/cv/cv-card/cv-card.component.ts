@@ -8,5 +8,5 @@ import { Cv } from '../model/cv.model';
   styleUrls: ['./cv-card.component.css']
 })
 export class CvCardComponent {
-  cv!: Cv;
+  cv: Cv | null = null;
 }
