@@ -7,7 +7,7 @@ import { Cv } from '../model/cv.model';
   styleUrls: ['./cv.component.css'],
 })
 export class CvComponent {
-
+  now = new Date();
   selectedCv: Cv | null = null;
   /**
    * la liste des cvs à gérer
@@ -20,7 +20,7 @@ export class CvComponent {
       20,
       '1234',
       'Ingénieur',
-      'rotating_card_profile2.png'
+      '           '
     ),
     new Cv(
       2,
@@ -38,7 +38,7 @@ export class CvComponent {
       42,
       '123456',
       'Enseignant',
-      'rotating_card_profile3.png'
+      ''
     ),
   ];
   constructor() {}

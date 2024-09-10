@@ -1,6 +1,9 @@
 <div class="row">
   <div class="col">
     <!-- appList(cvs) -->
+    <div class="alert alert-warning">
+      {{ now | date: 'full' | uppercase}}
+    </div>
     <app-list-cv [cvsList]="cvs" (forwardCv)="onForwardCv($event)"/>
   </div>
   <div class="col">
