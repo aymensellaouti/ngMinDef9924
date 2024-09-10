@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./mini-word.component.css']
 })
 export class MiniWordComponent {
-
+  //State mta3 el component
+  color = 'red';
+  fontSize = 75;
+  fontFamily = 'verdana';
 }
