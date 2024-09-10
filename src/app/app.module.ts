@@ -17,6 +17,7 @@ import { CvComponent } from './cv/cv/cv.component';
 import { ItemCvComponent } from './cv/item-cv/item-cv.component';
 import { NgstyleComponent } from './directives/ngstyle/ngstyle.component';
 import { MiniWordComponent } from './directives/mini-word/mini-word.component';
+import { LampeComponent } from './directives/lampe/lampe.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MiniWordComponent } from './directives/mini-word/mini-word.component';
     CvComponent,
     ItemCvComponent,
     NgstyleComponent,
-    MiniWordComponent
+    MiniWordComponent,
+    LampeComponent
   ],
   imports: [
     BrowserModule,

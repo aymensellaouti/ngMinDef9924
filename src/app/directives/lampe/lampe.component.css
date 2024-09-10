@@ -1,0 +1,16 @@
+.lampe {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 1px black;
+  padding: 50px;
+}
+
+.tech3el {
+  background-color: yellow;
+}
+
+.tafya {
+  background-color: black;
+  color: white;
+}
