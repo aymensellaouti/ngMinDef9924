@@ -1,0 +1,8 @@
+<form #myForm="ngForm" class="needs-validation">
+  name : <input class="form-control" required minlength="3" name="name" ngModel type="text">
+  age  : <input class="form-control" required name="age" ngModel type="text">
+
+  <button (click)="testForm(myForm)" class="btn btn-danger">
+    test form
+  </button>
+</form>
