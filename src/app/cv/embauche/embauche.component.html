@@ -1,6 +1,10 @@
-<div class="alert alert-secondary mt-2">
+<div class="alert alert-secondary mt-2" *ngIf="embauchees.length">
   Liste des cv pré embauchées:
   <div class="embauchee row">
-
+    <div
+    *ngFor="let embauche of embauchees"
+    class="col-4">
+      <app-item-cv [cv]="embauche" [size]="150" />
+    </div>
   </div>
 </div>

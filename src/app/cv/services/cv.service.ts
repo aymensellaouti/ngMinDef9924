@@ -8,11 +8,6 @@ import { Cv } from '../model/cv.model';
 export class CvService {
   private cvs: Cv[] = [];
 
-
-  constructor() {
-
-  }
-
   /**
    *
    * Retourne la liste des cvs
@@ -21,6 +16,6 @@ export class CvService {
    *
    */
   getCvs(): Cv[] {
-    return [];
+    return this.cvs;
   }
 }

@@ -18,7 +18,7 @@ export class EmbaucheService {
    *
    */
   getEmbauchees(): Cv[] {
-    return [];
+    return this.embauchees;
   }
 
   /**
@@ -29,7 +29,12 @@ export class EmbaucheService {
    * @param cv : Cv
    * @returns boolean
    */
-  embauche(cv: Cv): boolean {
-    return true;
+  hire(cv: Cv): boolean {
+    const index = this.embauchees.indexOf(cv);
+    if (index == -1) {
+      this.embauchees.push(cv);
+      return true;
+    }
+    return false;
   }
 }

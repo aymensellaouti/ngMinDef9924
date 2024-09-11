@@ -10,6 +10,8 @@ export class ItemCvComponent {
   // State du composant
   @Input({ required: true })
   cv!: Cv;
+  @Input()
+  size = 50;
 
   @Output()
   selectCv = new EventEmitter<Cv>();
