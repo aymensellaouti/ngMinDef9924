@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { Todo } from '../model/todo';
 import { TodoService } from '../service/todo.service';
+import { ToastrService } from 'ngx-toastr';
 
 
 
@@ -15,7 +16,9 @@ export class TodoComponent {
   // Tmathel l'inputet eli fel view
   todo = new Todo();
   todoService = inject(TodoService);
+  toastr = inject(ToastrService);
   constructor() {
+    this.toastr.info('Todo List')
     this.todos = this.todoService.getTodos();
   }
 

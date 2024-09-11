@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+/* External librries */
 @import '~bootstrap';
 @import '~bootstrap-icons';
+
 @import 'assets/css/rotating-card.css';
+@import 'ngx-toastr/toastr';
