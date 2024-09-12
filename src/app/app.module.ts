@@ -36,6 +36,7 @@ import { NF404Component } from './components/nf404/nf404.component';
 import { TestFormComponent } from './forms/test-form/test-form.component';
 import { LoginComponent } from './auth/login/login.component';
 import { TestRxJsComponent } from './rxjs/test-rx-js/test-rx-js.component';
+import { WeekTodoComponent } from './todo/week-todo/week-todo.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { TestRxJsComponent } from './rxjs/test-rx-js/test-rx-js.component';
     NF404Component,
     TestFormComponent,
     LoginComponent,
-    TestRxJsComponent
+    TestRxJsComponent,
+    WeekTodoComponent
   ],
   imports: [
     BrowserModule,

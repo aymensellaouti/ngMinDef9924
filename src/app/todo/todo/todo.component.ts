@@ -3,12 +3,11 @@ import { Todo } from '../model/todo';
 import { TodoService } from '../service/todo.service';
 import { ToastrService } from 'ngx-toastr';
 
-
-
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css'],
+  providers: [TodoService]
 })
 export class TodoComponent {
   // Tmathel la liste eli bech naffichiwha fel view

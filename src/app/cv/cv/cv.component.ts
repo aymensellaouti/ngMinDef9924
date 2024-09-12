@@ -9,6 +9,7 @@ import { ToastrService } from 'ngx-toastr';
   selector: 'app-cv',
   templateUrl: './cv.component.html',
   styleUrls: ['./cv.component.css'],
+  providers: []
 })
 export class CvComponent {
   now = new Date();
