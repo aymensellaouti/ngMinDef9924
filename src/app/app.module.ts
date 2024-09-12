@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Personal Module
 import { AppRoutingModule } from './app-routing.module';
@@ -74,6 +75,8 @@ import { TestRxJsComponent } from './rxjs/test-rx-js/test-rx-js.component';
     BrowserAnimationsModule, // required animations module
 
     ToastrModule.forRoot(), // ToastrModule added
+
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

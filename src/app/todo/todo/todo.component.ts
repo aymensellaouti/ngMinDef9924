@@ -20,6 +20,11 @@ export class TodoComponent {
   constructor() {
     this.toastr.info('Todo List')
     this.todos = this.todoService.getTodos();
+    this.todoService.getTodoViaApi().subscribe({
+      next: (todos) => {console.log(todos);},
+      error: (e) => {},
+      complete: () => {}
+    })
   }
 
   addTodo() {
