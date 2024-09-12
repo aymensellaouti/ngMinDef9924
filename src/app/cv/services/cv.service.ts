@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Cv } from '../model/cv.model';
+import { Subject } from 'rxjs';
 
 
 @Injectable({
@@ -36,6 +37,12 @@ export class CvService {
     ),
   ];
 
+  #selectedCvSubject$ = new Subject<Cv>();
+  /**
+   * Le flux des cvs sélectionnés
+   */
+  selectedCv$ = this.#selectedCvSubject$.asObservable();
+
   /**
    *
    * Retourne la liste des cvs
@@ -59,4 +66,14 @@ export class CvService {
     return false;
   }
 
+  /**
+   * Permet de notifier les personnes interessé par la selection d'un cv
+   * qu'un cv a été sélectionné
+   *
+   * @param cv le Cv à ajouter dans le flux
+   */
+  selectCv(cv: Cv): void {
+    // Tzid Cv fel Flux
+    this.#selectedCvSubject$.next(cv);
+  }
 }

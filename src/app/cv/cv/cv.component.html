@@ -4,10 +4,10 @@
     <div class="alert alert-warning">
       {{ now | date: 'full' | uppercase}}
     </div>
-    <app-list-cv [cvsList]="cvs" (forwardCv)="onForwardCv($event)"/>
+    <app-list-cv [cvsList]="cvs"/>
   </div>
   <div class="col">
-    <app-cv-card [cv]="selectedCv"/>
+    <app-cv-card [cv]="selectedCv$ | async"/>
   </div>
 </div>
 

@@ -8,7 +8,7 @@
     }"
     *ngFor="let cv of cvs; let isOdd = odd">
     <!-- appItem(cvs[0]) -->
-    <app-item-cv  [cv]="cv" (selectCv)="forwardSelectedCv($event)"/>
+    <app-item-cv  [cv]="cv"/>
   </li>
 
 </ol>
