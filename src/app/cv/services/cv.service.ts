@@ -65,8 +65,7 @@ export class CvService {
 
   deleteCvById(id: number): Observable<{count: number}> {
     //const params = new HttpParams().set('access_token',localStorage.getItem('token') ?? '');
-    const headers = new HttpHeaders().set('Authorization',localStorage.getItem('token') ?? '');
-    return this.http.delete<{ count: number }>(APP_API.cv + id, {headers});
+    return this.http.delete<{ count: number }>(APP_API.cv + id);
   }
 
   getFakeCvById(id: number): Cv | null {

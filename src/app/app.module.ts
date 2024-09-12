@@ -38,6 +38,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { TestRxJsComponent } from './rxjs/test-rx-js/test-rx-js.component';
 import { WeekTodoComponent } from './todo/week-todo/week-todo.component';
 import { AddCvComponent } from './cv/add-cv/add-cv.component';
+import { authInterceptorProvider } from './auth/interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,7 @@ import { AddCvComponent } from './cv/add-cv/add-cv.component';
     LoginComponent,
     TestRxJsComponent,
     WeekTodoComponent,
-    AddCvComponent
+    AddCvComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,9 +81,9 @@ import { AddCvComponent } from './cv/add-cv/add-cv.component';
 
     ToastrModule.forRoot(), // ToastrModule added
 
-    HttpClientModule
+    HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [authInterceptorProvider],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
