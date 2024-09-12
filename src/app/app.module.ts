@@ -37,6 +37,7 @@ import { TestFormComponent } from './forms/test-form/test-form.component';
 import { LoginComponent } from './auth/login/login.component';
 import { TestRxJsComponent } from './rxjs/test-rx-js/test-rx-js.component';
 import { WeekTodoComponent } from './todo/week-todo/week-todo.component';
+import { AddCvComponent } from './cv/add-cv/add-cv.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { WeekTodoComponent } from './todo/week-todo/week-todo.component';
     TestFormComponent,
     LoginComponent,
     TestRxJsComponent,
-    WeekTodoComponent
+    WeekTodoComponent,
+    AddCvComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,7 @@ import { Cv } from '../model/cv.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CvService } from '../services/cv.service';
 import { APP_ROUTES } from 'src/app/config/app-routes.config';
+import { AuthService } from 'src/app/auth/services/auth.service';
 
 
 
@@ -16,6 +17,7 @@ export class DetailsCvComponent {
   activatedRoute = inject(ActivatedRoute);
   router = inject(Router);
   cvService = inject(CvService);
+  authService = inject(AuthService);
   constructor() {
     const id = this.activatedRoute.snapshot.params['id'];
     this.cvService.getCvById(id).subscribe({
